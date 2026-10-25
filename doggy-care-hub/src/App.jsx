@@ -4,6 +4,10 @@ import Home from "./pages/Home.jsx";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
 import "./index.css";
+import Dashboard from "./pages/Dashboard.jsx";
+import Dogs from "./pages/Dogs.jsx";
+import Breeds from "./pages/Breeds.jsx";
+import Vaccinations from "./pages/Vaccinations.jsx";
 
 function Navigation() {
   return (
@@ -52,6 +56,10 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dogs" element={<Dogs />} />
+        <Route path="/breeds" element={<Breeds />} />
+        <Route path="/vaccinations" element={<Vaccinations />} />
         <Route
           path="*"
           element={
